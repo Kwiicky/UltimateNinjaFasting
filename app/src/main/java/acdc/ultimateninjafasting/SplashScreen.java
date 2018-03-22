@@ -7,12 +7,15 @@ import android.view.MotionEvent;
 
 /**
  * Created by FP13694 on 22/03/2018.
+ *
+ * Permet d'afficher la page de démarrage
+ *
  */
 
 public class SplashScreen extends Activity
 {
     /** Durée d'affichage du SplashScreen */
-    protected int _splashTime = 5000;
+    protected int _splashTime = 3000;
 
     private Thread splashTread;
 
