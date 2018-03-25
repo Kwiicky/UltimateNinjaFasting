@@ -22,7 +22,7 @@
         <activity android:name=".ProgrammationActivity" />
         <activity android:name=".ReglageProgrammationActivity" />
         <activity android:name=".ProgrammationDetailsActivity"></activity>
-        
+
         <provider
             android:name="provider.MyContentProvider"
             android:authorities="ultimate.ninja.fasting"
