@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="acdc.ultimateninjafasting.ProgrammationActivity">
+
+
+    <ImageButton
+        android:id="@+id/btnAddProg"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/drawable_circle_green"
+        android:onClick="clickEvent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listProgramme"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/drawable_circle_green"
+        app:layout_constraintBottom_toTopOf="@+id/listProgramme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="10dp"
+        android:layout_row="1"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Programme"
+        android:textAlignment="center"
+        android:textColor="@color/colorGreen"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listProgramme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ListView
+        android:id="@+id/listProgramme"
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddProg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>

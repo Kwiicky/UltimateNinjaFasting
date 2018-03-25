@@ -18,8 +18,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Main2Activity" />
         <activity android:name=".ProfilActivity"></activity>
+        <activity android:name=".ProgrammationActivity" />
+        <activity android:name=".ReglageProgrammationActivity" />
+        <activity android:name=".ProgrammationDetailsActivity"></activity>
+        
+        <provider
+            android:name="provider.MyContentProvider"
+            android:authorities="ultimate.ninja.fasting"
+            android:enabled="true"
+            android:exported="true"></provider>
+
     </application>
 
 </manifest>
