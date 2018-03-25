@@ -4,9 +4,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorGreen">#99cc00</color>
-<<<<<<< HEAD
     <color name="colorOrange">#FFBE46</color>
-=======
-    <color name="colorOrange">#ffbe46</color>
->>>>>>> 79ae663873993a202e28779fe3d0727a1b91f741
 </resources>
