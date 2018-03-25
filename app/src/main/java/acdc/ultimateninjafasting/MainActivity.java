@@ -1,8 +1,11 @@
 package acdc.ultimateninjafasting;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -28,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
 
         // method call to initialize the views
         initViews();
+
+        // TODO à supprimer
+        // --------------------------------------------
+        //  Bouton de redirection sur la programmation
+        // --------------------------------------------
+        final Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, ProfilActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
